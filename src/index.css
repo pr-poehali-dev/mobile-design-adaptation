@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,11 +15,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 60% 15%;
 
-    --primary: 203 60% 22%;
+    --primary: 195 65% 28%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 44 70% 58%;
-    --secondary-foreground: 210 60% 15%;
+    --secondary: 170 45% 55%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 203 40% 92%;
     --muted-foreground: 210 30% 50%;
@@ -108,24 +108,36 @@
   h4,
   h5,
   h6 {
-    font-family: "Cormorant", serif;
+    font-family: "Playfair Display", serif;
   }
 }
 
 @layer utilities {
-  .winter-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L30 55 M5 30 L55 30 M15 15 L45 45 M45 15 L15 45' stroke='%23D4AF37' stroke-width='0.5' opacity='0.1' fill='none'/%3E%3C/svg%3E");
+  .beach-gradient {
+    background: linear-gradient(135deg, #1a5f7a 0%, #57c5b6 100%);
   }
 
-  .text-gold {
-    color: #d4af37;
+  .text-turquoise {
+    color: #57c5b6;
   }
 
-  .bg-gold {
-    background-color: #d4af37;
+  .bg-turquoise {
+    background-color: #57c5b6;
   }
 
-  .border-gold {
-    border-color: #d4af37;
+  .text-ocean {
+    color: #1a5f7a;
+  }
+
+  .banner-style {
+    background: linear-gradient(
+      90deg,
+      rgba(26, 95, 122, 0.1) 0%,
+      rgba(87, 197, 182, 0.1) 100%
+    );
+    border-left: 4px solid #57c5b6;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
   }
 }
